@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ? responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rgb(174, 185, 185);
+        display: flex;
+        align-content: space-between; 
+        gap: 200px;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        
+      }
+    
+      .first{
+
+        width: 50%;
+        padding: 10 px;
+        border: 2px solid;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+      }
+      .second{
+        width: 50%;
+        padding: 10 px;
+        border: 2px solid;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+
+      }
+      .main{
+
+        display: flex;
+        gap:10px
+      }
+      .foot {
+        height: 20px;
+        text-align: center;
+        background-color:  rgb(174, 185, 185);
+        align-items: center;
+      }
+     
+      @media (max-width: 700px) {
+        .container {
+          display: block;
+          height: 140px;
+        }
+        .main {
+          display: block;
+        }
+        .first,
+        .second {
+          width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">home</div>
+      <div class="child2">about</div>
+      <div class="child3">services</div>
+      <div class="child4">content</div>
+
+    </div>
+
+    <div class="main">
+    <div class="first">
+       <div style="text-align: center;">
+
+        <p>
+            this is a flex item
+        </p>
+       </div> 
+           <div class="foot">
+footer
+            
+</div>
+    </div>
+    <div class="second" >
+       <div style="text-align: center;"> 
+        
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ipsam,
+        nesciunt iste hic cumque minus sapiente magnam obcaecati aliquid eaque ab
+        nam atque veniam rem doloremque ad repellat natus expedita!
+    </p>
+    </div>
+           <div class="foot">
+    footer
+
+           </div>
+
+       </div>
+    </div>
+  </body>
+</html>
